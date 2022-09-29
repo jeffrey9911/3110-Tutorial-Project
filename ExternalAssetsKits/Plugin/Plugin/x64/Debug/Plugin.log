@@ -1,0 +1,12 @@
+﻿  GameObject.cpp
+C:\Users\jeffr\Desktop\Plugin\Plugin\GameObject.h(28,16): warning C4251: 'GameObject::WriteFile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\iosfwd(244): message : see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+  Main.cpp
+C:\Users\jeffr\Desktop\Plugin\Plugin\GameObject.h(28,16): warning C4251: 'GameObject::WriteFile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\iosfwd(244): message : see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+  Wrapper.cpp
+C:\Users\jeffr\Desktop\Plugin\Plugin\GameObject.h(28,16): warning C4251: 'GameObject::WriteFile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\iosfwd(244): message : see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+  Generating Code...
+     Creating library C:\Users\jeffr\Desktop\Plugin\x64\Debug\Plugin.lib and object C:\Users\jeffr\Desktop\Plugin\x64\Debug\Plugin.exp
+  Plugin.vcxproj -> C:\Users\jeffr\Desktop\Plugin\x64\Debug\Plugin.dll
