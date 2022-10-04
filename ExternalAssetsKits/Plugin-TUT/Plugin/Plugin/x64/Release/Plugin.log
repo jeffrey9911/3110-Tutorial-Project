@@ -1,0 +1,15 @@
+﻿  GameObject.cpp
+C:\Users\Parisa Sargolzaei\Desktop\Plugin\Plugin\GameObject.h(25,11): warning C4251: 'GameObject::WriteFile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\iosfwd(233): message : see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+  Main.cpp
+C:\Users\Parisa Sargolzaei\Desktop\Plugin\Plugin\GameObject.h(25,11): warning C4251: 'GameObject::WriteFile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\iosfwd(233): message : see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+  Wrapper.cpp
+C:\Users\Parisa Sargolzaei\Desktop\Plugin\Plugin\GameObject.h(25,11): warning C4251: 'GameObject::WriteFile': class 'std::basic_ofstream<char,std::char_traits<char>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\iosfwd(233): message : see declaration of 'std::basic_ofstream<char,std::char_traits<char>>'
+     Creating library C:\Users\Parisa Sargolzaei\Desktop\Plugin\x64\Release\Plugin.lib and object C:\Users\Parisa Sargolzaei\Desktop\Plugin\x64\Release\Plugin.exp
+  Generating code
+  Compiler switch has changed, fall back to full compilation.
+  All 173 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Plugin.vcxproj -> C:\Users\Parisa Sargolzaei\Desktop\Plugin\x64\Release\Plugin.dll

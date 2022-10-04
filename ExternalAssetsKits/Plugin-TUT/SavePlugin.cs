@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using System.Runtime.InteropServices;
-using Unity.VisualScripting;
 
 public class SavePlugin : MonoBehaviour
 {
@@ -33,7 +31,8 @@ public class SavePlugin : MonoBehaviour
     string m_Path;
     string fn;
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         inputAction = PlayerInputController.controller.inputAction;
 
@@ -41,14 +40,13 @@ public class SavePlugin : MonoBehaviour
 
         m_Path = Application.dataPath;
         fn = m_Path + "/save.txt";
-        Debug.Log(fn);
+        Debug.Log(fn);    
     }
 
     void SaveItems()
     {
         StartWriting(fn);
-
-        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("SpikyBall"))
+        foreach(GameObject obj in GameObject.FindGameObjectsWithTag("SpikeBall"))
         {
             if(obj.name.Contains("SpikyBall1"))
             {
@@ -58,7 +56,13 @@ public class SavePlugin : MonoBehaviour
             {
                 SaveToFile(2, obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
             }
-            EndWriting();
         }
+        EndWriting();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
