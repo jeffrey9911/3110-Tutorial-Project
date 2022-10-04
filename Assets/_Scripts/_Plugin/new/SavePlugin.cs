@@ -48,13 +48,15 @@ public class SavePlugin : MonoBehaviour
         StartWriting(fn);
         foreach(GameObject obj in GameObject.FindGameObjectsWithTag("SpikyBall"))
         {
-            if(obj.name.Contains("SpikyBall1"))
+            if(obj.name.Contains("1"))
             {
                 SaveToFile(1, obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+                Debug.Log("PLUGIN: Saved to " + fn);
             }
             else
             {
                 SaveToFile(2, obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+                Debug.Log("PLUGIN: Saved to " + fn);
             }
         }
         EndWriting();

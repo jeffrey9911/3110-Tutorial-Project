@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class EditorManager : MonoBehaviour
 {
+    public static EditorManager Instance;
     PlayerAction inputAction;
 
     public Camera mainCam;
@@ -14,15 +15,19 @@ public class EditorManager : MonoBehaviour
     public GameObject prefab1;
     public GameObject prefab2;
 
-    GameObject item;
+    public GameObject item;
 
     public bool editorMdoe = false;
 
-    bool instantiated = false;
+    public bool instantiated = false;
 
     Vector3 mousePos;
 
     Subject subject = new Subject();
+
+    iCommand _icommand;
+
+    UIManager UI;
 
     /*
     private void OnEnable()
@@ -37,6 +42,11 @@ public class EditorManager : MonoBehaviour
 
     private void Start()
     {
+
+        if(Instance == null)
+        {
+            Instance = this;
+        }
         //inputAction = new PlayerAction();
         inputAction = PlayerInputController.controller.inputAction;
 
@@ -48,12 +58,16 @@ public class EditorManager : MonoBehaviour
 
         mainCam.enabled = true;
         editorCamera.enabled = false;
+
+        UI = GetComponent<UIManager>();
     }
     
     private void SwitchCamera()
     {
         mainCam.enabled = !mainCam.enabled;
         editorCamera.enabled = !editorCamera.enabled;
+
+        UI.ToggleEditorUI();
     }
 
     private void AddItem(int itemID)
@@ -84,10 +98,16 @@ public class EditorManager : MonoBehaviour
 
     private void Drop()
     {
-        item.GetComponent<Rigidbody>().useGravity = true;
-        item.GetComponent<SphereCollider>().enabled = true;
+        if(editorMdoe && instantiated)
+        {
+            item.GetComponent<Rigidbody>().useGravity = true;
+            item.GetComponent<SphereCollider>().enabled = true;
 
-        instantiated = false;
+            _icommand = new PlaceItemCommand(item.transform.position, item.transform);
+            CommandInvoker.AddCommand(_icommand);
+
+            instantiated = false;
+        }
     }
 
     // Update is called once per frame
