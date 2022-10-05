@@ -445,7 +445,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 1
@@ -1022,7 +1022,7 @@ MonoBehaviour:
   prefab1: {fileID: 7261114649664524038, guid: a2906c823a9d5de418f339bdb61cc267, type: 3}
   prefab2: {fileID: 928798998538146418, guid: cfbdd84b5d6f7ac4ca45a8acb589de5f, type: 3}
   item: {fileID: 0}
-  editorMdoe: 0
+  editorMode: 0
   instantiated: 0
 --- !u!114 &1322575663
 MonoBehaviour:

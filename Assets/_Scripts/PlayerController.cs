@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
@@ -67,11 +68,14 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
-        Rigidbody bulletRb = Instantiate(bullet, projectilePos.position, Quaternion.identity).GetComponent<Rigidbody>();
+        if(!EditorManager.Instance.editorMode)
+        {
+            Rigidbody bulletRb = Instantiate(bullet, projectilePos.position, Quaternion.identity).GetComponent<Rigidbody>();
 
-        bulletRb.AddForce(transform.forward * 32.0f, ForceMode.Impulse);
+            bulletRb.AddForce(transform.forward * 32.0f, ForceMode.Impulse);
 
-        bulletRb.AddForce(transform.up * 5.0f, ForceMode.Impulse);
+            bulletRb.AddForce(transform.up * 5.0f, ForceMode.Impulse);
+        }
     }
     
 

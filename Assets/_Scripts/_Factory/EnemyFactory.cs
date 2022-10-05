@@ -41,21 +41,14 @@ public class EnemyFactory : MonoBehaviour
     {
         foreach(Enemy enemy in _enemies)
         {
-            if(enemy == null)
+            if (enemy.Name == enemyType)
             {
-                Debug.Log("Enemy is null!");
-            }
-            else
-            {
-                if (enemy.name == enemyType)
-                {
-                    Debug.Log("Enemy is found!");
-                    var target = Activator.CreateInstance(enemy.GetType()) as Enemy;
+                Debug.Log("Enemy is found!");
+                var target = Activator.CreateInstance(enemy.GetType()) as Enemy;
 
-                    return target;
-                }
+                return target;
             }
-            
+
         }
         
         return null;

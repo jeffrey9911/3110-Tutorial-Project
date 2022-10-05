@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8536202778714435984}
   - component: {fileID: 6314980470282671478}
-  - component: {fileID: 8279937374284355459}
+  - component: {fileID: 6313327822659577861}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Untagged
@@ -511,7 +511,7 @@ Transform:
   - {fileID: 22239814930889833}
   - {fileID: 8668875727875965871}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6314980470282671478
 Rigidbody:
@@ -529,8 +529,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &8279937374284355459
-CapsuleCollider:
+--- !u!135 &6313327822659577861
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -539,7 +539,6 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 0
-  m_Radius: 1.06
-  m_Height: 2.45
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.53, z: 0}
+  serializedVersion: 2
+  m_Radius: 0.95
+  m_Center: {x: 0, y: 0.66, z: 0}

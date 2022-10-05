@@ -17,7 +17,7 @@ public class EditorManager : MonoBehaviour
 
     public GameObject item;
 
-    public bool editorMdoe = false;
+    public bool editorMode = false;
 
     public bool instantiated = false;
 
@@ -72,7 +72,7 @@ public class EditorManager : MonoBehaviour
 
     private void AddItem(int itemID)
     {
-        if(editorMdoe && !instantiated)
+        if(editorMode && !instantiated)
         {
             switch(itemID)
             {
@@ -98,7 +98,7 @@ public class EditorManager : MonoBehaviour
 
     private void Drop()
     {
-        if(editorMdoe && instantiated)
+        if(editorMode && instantiated)
         {
             item.GetComponent<Rigidbody>().useGravity = true;
             item.GetComponent<SphereCollider>().enabled = true;
@@ -115,13 +115,13 @@ public class EditorManager : MonoBehaviour
     {
         if(mainCam.enabled == false && editorCamera.enabled == true)
         {
-            editorMdoe = true;
+            editorMode = true;
             Time.timeScale = 0.0f;
             Cursor.lockState = CursorLockMode.None;
         }
         else
         {
-            editorMdoe = false;
+            editorMode = false;
             Time.timeScale = 1.0f;
             Cursor.lockState = CursorLockMode.Locked;
         }

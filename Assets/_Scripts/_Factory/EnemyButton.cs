@@ -30,8 +30,6 @@ public class EnemyButton : MonoBehaviour
         switch(_btnText.text)
         {
             case "crab":
-                if (_factory.prefab1 == null)
-                    Debug.Log("Prefab1 is null");
                 _editor.item = _factory.GetEnemy("crab").Create(_factory.prefab1);
                 break;
 
@@ -40,6 +38,6 @@ public class EnemyButton : MonoBehaviour
                 break;
         }
 
-        
+        _editor.instantiated = true;
     }
 }

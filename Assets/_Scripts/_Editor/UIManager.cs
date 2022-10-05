@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        editorMode = GetComponent<EditorManager>().editorMdoe;
+        editorMode = GetComponent<EditorManager>().editorMode;
 
         if (editorMode == false)
         {
