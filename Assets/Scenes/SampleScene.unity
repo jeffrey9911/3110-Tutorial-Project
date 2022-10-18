@@ -420,11 +420,11 @@ RectTransform:
   m_Father: {fileID: 71417416}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -502.87198, y: 0}
-  m_SizeDelta: {x: -1005.744, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -217.74402, y: 418}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &513671767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +970,7 @@ GameObject:
   - component: {fileID: 1322575666}
   - component: {fileID: 1322575668}
   - component: {fileID: 1322575667}
+  - component: {fileID: 1322575669}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1101,6 +1102,18 @@ MonoBehaviour:
   prefab2: {fileID: 4116028193725527153, guid: 5ee7efc2c0f61e046a62ab38b838d626, type: 3}
   _btnPanel: {fileID: 513671765}
   _btnPrefab: {fileID: 5270068898933635503, guid: 8b00cce52725b93409602c6039bb3ce3, type: 3}
+--- !u!114 &1322575669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322575659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed23dcc2198bb54b94624db7b766eab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2110415108
 PrefabInstance:
   m_ObjectHideFlags: 0

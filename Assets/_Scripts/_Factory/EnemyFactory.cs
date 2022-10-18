@@ -48,7 +48,6 @@ public class EnemyFactory : MonoBehaviour
 
                 return target;
             }
-
         }
         
         return null;
