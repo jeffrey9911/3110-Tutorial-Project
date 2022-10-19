@@ -1,0 +1,15 @@
+﻿  GameObject.cpp
+C:\Users\jeffr\Desktop\LoadPlugin\LoadPlugin\GameObject.h(25,16): warning C4251: 'GameObject::line': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Users\jeffr\Desktop\LoadPlugin\LoadPlugin\GameObject.h(25): message : see declaration of 'std::vector<float,std::allocator<float>>'
+  main.cpp
+C:\Users\jeffr\Desktop\LoadPlugin\LoadPlugin\GameObject.h(25,16): warning C4251: 'GameObject::line': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Users\jeffr\Desktop\LoadPlugin\LoadPlugin\GameObject.h(25): message : see declaration of 'std::vector<float,std::allocator<float>>'
+  Wrapper.cpp
+C:\Users\jeffr\Desktop\LoadPlugin\LoadPlugin\GameObject.h(25,16): warning C4251: 'GameObject::line': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'GameObject'
+C:\Users\jeffr\Desktop\LoadPlugin\LoadPlugin\GameObject.h(25): message : see declaration of 'std::vector<float,std::allocator<float>>'
+     Creating library C:\Users\jeffr\Desktop\LoadPlugin\x64\Release\LoadPlugin.lib and object C:\Users\jeffr\Desktop\LoadPlugin\x64\Release\LoadPlugin.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 242 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  LoadPlugin.vcxproj -> C:\Users\jeffr\Desktop\LoadPlugin\x64\Release\LoadPlugin.dll
