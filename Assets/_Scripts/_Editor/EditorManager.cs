@@ -40,13 +40,17 @@ public class EditorManager : MonoBehaviour
         inputAction.Disable();
     }*/
 
-    private void Start()
+    private void Awake()
     {
 
-        if(Instance == null)
+
+        if (Instance == null)
         {
             Instance = this;
         }
+    }
+    private void Start()
+    {
         //inputAction = new PlayerAction();
         inputAction = PlayerInputController.controller.inputAction;
 
@@ -100,7 +104,12 @@ public class EditorManager : MonoBehaviour
     {
         if(editorMode && instantiated)
         {
-            item.GetComponent<Rigidbody>().useGravity = true;
+            if(item.GetComponent<Rigidbody>())
+            {
+                item.GetComponent<Rigidbody>().useGravity = true;
+            }
+
+            
             item.GetComponent<SphereCollider>().enabled = true;
 
             _icommand = new PlaceItemCommand(item.transform.position, item.transform);

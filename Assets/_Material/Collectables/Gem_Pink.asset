@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cca192c1e1ae340b1cf7ff32ba4d04, type: 3}
+  m_Name: Gem_Pink
+  m_EditorClassIdentifier: 
+  _name: PinkGem
+  _score: 500
+  _prefab: {fileID: 5124061139001189978, guid: 588813433995dfe42863e452e5b3f07b, type: 3}

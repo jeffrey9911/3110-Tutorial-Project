@@ -29,6 +29,7 @@ public class Flyweight : MonoBehaviour
 
     void LoadItems()
     {
+        /*
         int numLines = GetLines(fn);
 
         int maxItems = numLines / 4;
@@ -54,7 +55,7 @@ public class Flyweight : MonoBehaviour
                 newItem.itemID = (int)LoadFromFile(infoSet + 0, fn);
                 newItem.itemPos.x = LoadFromFile(infoSet + 1, fn);
                 newItem.itemPos.y = LoadFromFile(infoSet + 2, fn);
-                newItem.itemPos.z = LoadFromFile(infoSet + 3, fn);*/
+                newItem.itemPos.z = LoadFromFile(infoSet + 3, fn);
 
                 //using flyweight
                 newItem.itemID = (int)LoadFromFile(infoSet + 0, fn);
@@ -70,5 +71,6 @@ public class Flyweight : MonoBehaviour
         }
 
         Debug.Log(allItems.Count + " of items are added!");
+        */
     }
 }
