@@ -31,6 +31,8 @@ public class SavePlugin : MonoBehaviour
     string m_Path;
     string fn;
 
+    bool dirty = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,7 @@ public class SavePlugin : MonoBehaviour
 
     void SaveItems()
     {
+        /*
         StartWriting(fn);
         foreach(GameObject obj in GameObject.FindGameObjectsWithTag("SpikyBall"))
         {
@@ -59,12 +62,33 @@ public class SavePlugin : MonoBehaviour
                 Debug.Log("PLUGIN: Saved to " + fn);
             }
         }
-        EndWriting();
+        EndWriting();*/
+
+        dirty = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(dirty)
+        {
+            StartWriting(fn);
+            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("SpikyBall"))
+            {
+                if (obj.name.Contains("1"))
+                {
+                    SaveToFile(1, obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+                    Debug.Log("PLUGIN: Saved to " + fn);
+                }
+                else
+                {
+                    SaveToFile(2, obj.transform.position.x, obj.transform.position.y, obj.transform.position.z);
+                    Debug.Log("PLUGIN: Saved to " + fn);
+                }
+            }
+            EndWriting();
+
+            dirty = false;
+        }
     }
 }
